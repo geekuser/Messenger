@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Public Messenger</title>
+        <link rel="stylesheet" href="/css/materialize.css" />
+        <link rel="stylesheet" type="text/css" href="/css/chat.css">
+    </head>
+    <body class="fadeInPagina">
+        <div class="container">
+            <i class="mdi-communication-chat" id="icon" > Public Messenger</i>
+            <p id="hour"></p>
+            <div id="log">
+                <ul id="messages"></ul>
+            </div>
+            <div class="messege">
+                <form action="" >
+                    <div class="row" >
+                        <i class="mdi-maps-location-history"></i>
+                        <input id="myMessage" placeholder="Enter your message..." type="text" autocomplete="off" />
+                        <button class="waves-light btn tooltipped" id="send" type="submit" name="action" data-tooltip="Click to send or press Enter" data-position="right">
+                            Send<i class="mdi-content-send right"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- JavaScript -->
+        <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
+        <script src="/js/messenger.js"></script>
+    </body>
+</html>
