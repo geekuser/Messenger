@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 13px Helvetica, Arial;
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fadeInPagina {
+    -webkit-animation: fadeIn 2s ease-in-out;
+    -moz-animation: fadeIn 2s ease-in-out;
+    -o-animation: fadeIn 2s ease-in-out;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.fadeInMessage {
+    -webkit-animation: fadeIn 0.8s ease-in-out;
+    -moz-animation: fadeIn 0.8s ease-in-out;
+    -o-animation: fadeIn 0.8s ease-in-out;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.messege{
+    width: 65%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    margin-bottom: 5%;
+    margin-left: 19%;
+}
+
+#messages {
+    position: absolute;
+    bottom: 0;
+}
+
+#messages li {
+    margin-top: 2.9%;
+    margin-bottom: 1%;
+    padding: 10px 10px;
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Calibri, Trebuchet, sans-serif;
+    font-style: normal;
+}
+
+#myMessage{
+    width: 60%;
+    font-size: 15px;
+}
+
+#send{
+    width: 14%;
+    font-size: 10px;
+}
+
+#icon{
+    position: absolute;
+    margin-top: 1.5%;
+    margin-left: 1%;
+    font-size: 20px;
+}
+
+#hour{
+    right: 0;
+    position: absolute;
+    margin-top: 3%;
+    margin-right: 15.5%;
+}
+
+#log{
+    width: 67%;
+    height: 65%;
+    margin-top: 5%;
+    margin-left: 1%;
+    position: absolute;
+    overflow: auto;
+    box-shadow: 10px 10px 08px #4db6ac;
+}
